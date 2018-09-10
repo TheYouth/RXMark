@@ -118,10 +118,10 @@
 			isa = PBXGroup;
 			children = (
 				231BE22721463DC80070BBB3 /* RXHomeVC.h */,
-				231BE22821463DC80070BBB3 /* RXSplashVC.m */,
 				231BE22921463DC80070BBB3 /* RXHomeVC.m */,
-				231BE22A21463DC80070BBB3 /* View */,
 				231BE22D21463DC80070BBB3 /* RXSplashVC.h */,
+				231BE22821463DC80070BBB3 /* RXSplashVC.m */,
+				231BE22A21463DC80070BBB3 /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -138,8 +138,8 @@
 		231BE22E21463DC80070BBB3 /* Bill */ = {
 			isa = PBXGroup;
 			children = (
-				231BE22F21463DC80070BBB3 /* RXBillVC.m */,
 				231BE23021463DC80070BBB3 /* RXBillVC.h */,
+				231BE22F21463DC80070BBB3 /* RXBillVC.m */,
 			);
 			path = Bill;
 			sourceTree = "<group>";
@@ -147,8 +147,8 @@
 		231BE23121463DC80070BBB3 /* Alert */ = {
 			isa = PBXGroup;
 			children = (
-				231BE23221463DC80070BBB3 /* RXAlertVC.m */,
 				231BE23321463DC80070BBB3 /* RXAlertVC.h */,
+				231BE23221463DC80070BBB3 /* RXAlertVC.m */,
 			);
 			path = Alert;
 			sourceTree = "<group>";
@@ -192,10 +192,10 @@
 		231BE23E21463DC80070BBB3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				231BE23F21463DC80070BBB3 /* RXDiaryTableViewCell.m */,
-				231BE24021463DC80070BBB3 /* RXDiaryNoPicTableViewCell.m */,
 				231BE24121463DC80070BBB3 /* RXDiaryTableViewCell.h */,
+				231BE23F21463DC80070BBB3 /* RXDiaryTableViewCell.m */,
 				231BE24221463DC80070BBB3 /* RXDiaryNoPicTableViewCell.h */,
+				231BE24021463DC80070BBB3 /* RXDiaryNoPicTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -212,8 +212,8 @@
 		231BE24621463DC80070BBB3 /* Place */ = {
 			isa = PBXGroup;
 			children = (
-				231BE24721463DC80070BBB3 /* RXPlaceVC.m */,
 				231BE24821463DC80070BBB3 /* RXPlaceVC.h */,
+				231BE24721463DC80070BBB3 /* RXPlaceVC.m */,
 			);
 			path = Place;
 			sourceTree = "<group>";
@@ -221,16 +221,16 @@
 		231BE24921463DC80070BBB3 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				231BE24A21463DC80070BBB3 /* RXVerticallyAlignedLabel.m */,
-				231BE24B21463DC80070BBB3 /* RXBaseNavVC.m */,
-				231BE24C21463DC80070BBB3 /* RXAutoCoding.m */,
-				231BE24D21463DC80070BBB3 /* RXBaseVC.m */,
-				231BE24E21463DC80070BBB3 /* EMTheme.m */,
 				231BE24F21463DC80070BBB3 /* RXVerticallyAlignedLabel.h */,
+				231BE24A21463DC80070BBB3 /* RXVerticallyAlignedLabel.m */,
 				231BE25021463DC80070BBB3 /* RXBaseNavVC.h */,
+				231BE24B21463DC80070BBB3 /* RXBaseNavVC.m */,
 				231BE25121463DC80070BBB3 /* RXAutoCoding.h */,
+				231BE24C21463DC80070BBB3 /* RXAutoCoding.m */,
 				231BE25221463DC80070BBB3 /* RXBaseVC.h */,
+				231BE24D21463DC80070BBB3 /* RXBaseVC.m */,
 				231BE25321463DC80070BBB3 /* EMTheme.h */,
+				231BE24E21463DC80070BBB3 /* EMTheme.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
