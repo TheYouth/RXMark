@@ -10,6 +10,10 @@
 #import "RXDiaryTableViewCell.h"
 #import "RXDiaryNoPicTableViewCell.h"
 #import "RXDiaryInfoModel.h"
+#import "MJRefresh.h"
+#import "EMTheme.h"
+#import "RXPublicDiaryVC.h"
+#import "RXBaseNavVC.h"
 
 static NSString *RXDiaryTableViewCellIdentif = @"RXDiaryTableViewCellIdentif";
 static NSString *RXDiaryNoPicTableViewCellIdentif = @"RXDiaryNoPicTableViewCellIdentif";
@@ -17,6 +21,11 @@ static NSString *RXDiaryNoPicTableViewCellIdentif = @"RXDiaryNoPicTableViewCellI
 
 @property (nonatomic, strong) UITableView      *tableView;
 @property (nonatomic, strong) NSArray          *diaryInfos;
+@property (nonatomic, strong) UIButton         *publishBtn;
+@property (nonatomic, strong) MJRefreshAutoNormalFooter  *refreshFooter;
+
+
+
 @end
 
 @implementation RXDiaryVC
@@ -24,6 +33,8 @@ static NSString *RXDiaryNoPicTableViewCellIdentif = @"RXDiaryNoPicTableViewCellI
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshList:) name:nil object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshPage) name:nil object:nil];
     [self initUI];
     [self loadData];
 }
@@ -32,10 +43,18 @@ static NSString *RXDiaryNoPicTableViewCellIdentif = @"RXDiaryNoPicTableViewCellI
 }
 #pragma mark - 🔒private
 - (void)initUI{
-    
+    self.title = NSLocalizedString(@"日记", nil);
+    UIBarButtonItem *pubItem = [[UIBarButtonItem alloc] initWithCustomView:self.publishBtn];
+    UIBarButtonItem *spaceItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+    spaceItem.width = -5;
+    self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:spaceItem,pubItem, nil];
     [self.view addSubview:self.tableView];
+    _tableView.mj_footer = self.refreshFooter;
 }
 - (void)loadData{
+    
+}
+- (void)loadMoreData{
     
 }
 #pragma mark - 🚪public
@@ -62,9 +81,31 @@ static NSString *RXDiaryNoPicTableViewCellIdentif = @"RXDiaryNoPicTableViewCellI
         return cell;
     }
 }
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (self.diaryInfos && self.diaryInfos.count > indexPath.row) {
+        RXDiaryInfoModel *infoM = self.diaryInfos[indexPath.row];
+        if (infoM.diaryImage) {
+            return 105;
+        }else{
+            return 75;
+        }
+    }
+    return 0.01;
+}
 #pragma mark - 🔄overwrite
 #pragma mark - ☎️notification
+- (void)refreshList:(NSNotification *)noti{
+    
+}
+- (void)refreshPage{
+    
+}
 #pragma mark - 🎬event response
+- (void)publishDiary{
+    RXPublicDiaryVC *publicDiaryVC = [[RXPublicDiaryVC alloc] init];
+    RXBaseNavVC *baseNavVC = [[RXBaseNavVC alloc] initWithRootViewController:publicDiaryVC];
+    [self.navigationController presentViewController:baseNavVC animated:YES completion:nil];
+}
 #pragma mark - ☸getter and setter
 - (UITableView *)tableView{
     if (!_tableView) {
@@ -83,6 +124,27 @@ static NSString *RXDiaryNoPicTableViewCellIdentif = @"RXDiaryNoPicTableViewCellI
     }
     return _tableView;
 }
-
-
+- (UIButton *)publishBtn{
+    if (!_publishBtn) {
+        _publishBtn  = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 64, 64)];
+        [_publishBtn setImage:[UIImage imageNamed:@"publishDiary"] forState:UIControlStateNormal];
+        [_publishBtn addTarget:self action:@selector(publishDiary) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _publishBtn;
+}
+- (MJRefreshAutoNormalFooter *)refreshFooter{
+    if (!_refreshFooter) {
+        __weak typeof(self)weakSelf = self;
+        _refreshFooter = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+            [weakSelf loadMoreData];
+        }];
+        [_refreshFooter setTitle:NSLocalizedString(@"点击或上拉加载更多", nil)  forState:MJRefreshStateIdle];
+        [_refreshFooter setTitle:NSLocalizedString(@"正在玩命加载...", nil) forState:MJRefreshStatePulling];
+        [_refreshFooter setTitle:NSLocalizedString(@"没有更多了", nil) forState:MJRefreshStateNoMoreData];
+        _refreshFooter.stateLabel.font = [UIFont systemFontOfSize:15];
+        _refreshFooter.stateLabel.textColor = UIColorFromHexRGB(0x999999);
+        [_refreshFooter setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleGray];
+    }
+    return _refreshFooter;
+}
 @end

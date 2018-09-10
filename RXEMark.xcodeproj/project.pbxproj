@@ -25,6 +25,7 @@
 		231BE26221463DC90070BBB3 /* RXAutoCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 231BE24C21463DC80070BBB3 /* RXAutoCoding.m */; };
 		231BE26321463DC90070BBB3 /* RXBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 231BE24D21463DC80070BBB3 /* RXBaseVC.m */; };
 		231BE26421463DC90070BBB3 /* EMTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 231BE24E21463DC80070BBB3 /* EMTheme.m */; };
+		231BE26821466EBF0070BBB3 /* RXPublicDiaryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 231BE26721466EBF0070BBB3 /* RXPublicDiaryVC.m */; };
 		B2AB4D872111F6780061A8DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AB4D862111F6780061A8DB /* AppDelegate.m */; };
 		B2AB4D8D2111F6780061A8DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2AB4D8B2111F6780061A8DB /* Main.storyboard */; };
 		B2AB4D8F2111F67A0061A8DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2AB4D8E2111F67A0061A8DB /* Assets.xcassets */; };
@@ -68,6 +69,8 @@
 		231BE25121463DC80070BBB3 /* RXAutoCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXAutoCoding.h; sourceTree = "<group>"; };
 		231BE25221463DC80070BBB3 /* RXBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXBaseVC.h; sourceTree = "<group>"; };
 		231BE25321463DC80070BBB3 /* EMTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMTheme.h; sourceTree = "<group>"; };
+		231BE26621466EBF0070BBB3 /* RXPublicDiaryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RXPublicDiaryVC.h; sourceTree = "<group>"; };
+		231BE26721466EBF0070BBB3 /* RXPublicDiaryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RXPublicDiaryVC.m; sourceTree = "<group>"; };
 		6D597A5917A0774BD88F6BC7 /* Pods-RXEMark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXEMark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RXEMark/Pods-RXEMark.debug.xcconfig"; sourceTree = "<group>"; };
 		93605CC12A5C82B67B3A44B9 /* Pods-RXEMark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXEMark.release.xcconfig"; path = "Pods/Target Support Files/Pods-RXEMark/Pods-RXEMark.release.xcconfig"; sourceTree = "<group>"; };
 		ADB484BA40FB8B3FC9C69ECE /* libPods-RXEMark.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RXEMark.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +179,8 @@
 				231BE23A21463DC80070BBB3 /* RXDiaryVC.m */,
 				231BE23B21463DC80070BBB3 /* Model */,
 				231BE23E21463DC80070BBB3 /* View */,
+				231BE26621466EBF0070BBB3 /* RXPublicDiaryVC.h */,
+				231BE26721466EBF0070BBB3 /* RXPublicDiaryVC.m */,
 			);
 			path = Diary;
 			sourceTree = "<group>";
@@ -425,6 +430,7 @@
 				231BE26021463DC90070BBB3 /* RXVerticallyAlignedLabel.m in Sources */,
 				231BE25421463DC80070BBB3 /* RXSplashVC.m in Sources */,
 				231BE25D21463DC90070BBB3 /* RXDiaryNoPicTableViewCell.m in Sources */,
+				231BE26821466EBF0070BBB3 /* RXPublicDiaryVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
