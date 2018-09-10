@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BF5BA8468F81CE09BA941DF /* libPods-RXEMark.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADB484BA40FB8B3FC9C69ECE /* libPods-RXEMark.a */; };
 		B20FD277212C5F4900263BD0 /* RXDiaryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B20FD276212C5F4900263BD0 /* RXDiaryTableViewCell.m */; };
 		B20FD27A212C5F6B00263BD0 /* RXDiaryNoPicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B20FD279212C5F6B00263BD0 /* RXDiaryNoPicTableViewCell.m */; };
 		B21DE8DC2132A5A90021AF07 /* RXDiaryInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B21DE8DB2132A5A90021AF07 /* RXDiaryInfoModel.m */; };
@@ -45,6 +46,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D597A5917A0774BD88F6BC7 /* Pods-RXEMark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXEMark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RXEMark/Pods-RXEMark.debug.xcconfig"; sourceTree = "<group>"; };
+		93605CC12A5C82B67B3A44B9 /* Pods-RXEMark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXEMark.release.xcconfig"; path = "Pods/Target Support Files/Pods-RXEMark/Pods-RXEMark.release.xcconfig"; sourceTree = "<group>"; };
+		ADB484BA40FB8B3FC9C69ECE /* libPods-RXEMark.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RXEMark.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20FD275212C5F4900263BD0 /* RXDiaryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RXDiaryTableViewCell.h; sourceTree = "<group>"; };
 		B20FD276212C5F4900263BD0 /* RXDiaryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RXDiaryTableViewCell.m; sourceTree = "<group>"; };
 		B20FD278212C5F6B00263BD0 /* RXDiaryNoPicTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RXDiaryNoPicTableViewCell.h; sourceTree = "<group>"; };
@@ -125,12 +129,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BF5BA8468F81CE09BA941DF /* libPods-RXEMark.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A863354988A6425C00D5C1DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADB484BA40FB8B3FC9C69ECE /* libPods-RXEMark.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B20FD274212C5D9300263BD0 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +269,8 @@
 			children = (
 				B2AB4D842111F6780061A8DB /* RXEMark */,
 				B2AB4D832111F6780061A8DB /* Products */,
+				B81BD3925998474CFB427177 /* Pods */,
+				A863354988A6425C00D5C1DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -367,6 +382,15 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
+		B81BD3925998474CFB427177 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D597A5917A0774BD88F6BC7 /* Pods-RXEMark.debug.xcconfig */,
+				93605CC12A5C82B67B3A44B9 /* Pods-RXEMark.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -374,6 +398,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2AB4D982111F67A0061A8DB /* Build configuration list for PBXNativeTarget "RXEMark" */;
 			buildPhases = (
+				03C4D142A727DFAF6829058D /* [CP] Check Pods Manifest.lock */,
 				B2AB4D7E2111F6780061A8DB /* Sources */,
 				B2AB4D7F2111F6780061A8DB /* Frameworks */,
 				B2AB4D802111F6780061A8DB /* Resources */,
@@ -435,6 +460,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03C4D142A727DFAF6829058D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RXEMark-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B2AB4D7E2111F6780061A8DB /* Sources */ = {
@@ -620,6 +666,7 @@
 		};
 		B2AB4D992111F67A0061A8DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D597A5917A0774BD88F6BC7 /* Pods-RXEMark.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -637,6 +684,7 @@
 		};
 		B2AB4D9A2111F67A0061A8DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93605CC12A5C82B67B3A44B9 /* Pods-RXEMark.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
