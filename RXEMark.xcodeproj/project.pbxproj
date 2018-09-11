@@ -26,6 +26,17 @@
 		231BE26321463DC90070BBB3 /* RXBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 231BE24D21463DC80070BBB3 /* RXBaseVC.m */; };
 		231BE26421463DC90070BBB3 /* EMTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 231BE24E21463DC80070BBB3 /* EMTheme.m */; };
 		231BE26821466EBF0070BBB3 /* RXPublicDiaryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 231BE26721466EBF0070BBB3 /* RXPublicDiaryVC.m */; };
+		2321EA1621475040000BAE14 /* EMTips.m in Sources */ = {isa = PBXBuildFile; fileRef = 2321EA0A2147503F000BAE14 /* EMTips.m */; };
+		2321EA1721475041000BAE14 /* EMLogoLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2321EA0C2147503F000BAE14 /* EMLogoLoopView.m */; };
+		2321EA1821475041000BAE14 /* EMProgressLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2321EA0D2147503F000BAE14 /* EMProgressLoopView.m */; };
+		2321EA1921475041000BAE14 /* EMTipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2321EA0E21475040000BAE14 /* EMTipsView.m */; };
+		2321EA1A21475041000BAE14 /* EMTipsInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2321EA1221475040000BAE14 /* EMTipsInfo.m */; };
+		2321EA1B21475041000BAE14 /* UIView+EMTips.m in Sources */ = {isa = PBXBuildFile; fileRef = 2321EA1521475040000BAE14 /* UIView+EMTips.m */; };
+		2321EA262147506B000BAE14 /* GKImageCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2321EA1E2147506A000BAE14 /* GKImageCropViewController.m */; };
+		2321EA272147506B000BAE14 /* FSMediaPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2321EA1F2147506A000BAE14 /* FSMediaPicker.m */; };
+		2321EA282147506B000BAE14 /* GKCropBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2321EA222147506B000BAE14 /* GKCropBorderView.m */; };
+		2321EA292147506B000BAE14 /* GKImageCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2321EA232147506B000BAE14 /* GKImageCropView.m */; };
+		2321EA2A2147506B000BAE14 /* GKImageCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2321EA242147506B000BAE14 /* GKImageCropOverlayView.m */; };
 		B2AB4D872111F6780061A8DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AB4D862111F6780061A8DB /* AppDelegate.m */; };
 		B2AB4D8D2111F6780061A8DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2AB4D8B2111F6780061A8DB /* Main.storyboard */; };
 		B2AB4D8F2111F67A0061A8DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2AB4D8E2111F67A0061A8DB /* Assets.xcassets */; };
@@ -71,6 +82,28 @@
 		231BE25321463DC80070BBB3 /* EMTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMTheme.h; sourceTree = "<group>"; };
 		231BE26621466EBF0070BBB3 /* RXPublicDiaryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RXPublicDiaryVC.h; sourceTree = "<group>"; };
 		231BE26721466EBF0070BBB3 /* RXPublicDiaryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RXPublicDiaryVC.m; sourceTree = "<group>"; };
+		2321EA0A2147503F000BAE14 /* EMTips.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMTips.m; sourceTree = "<group>"; };
+		2321EA0B2147503F000BAE14 /* EMProgressLoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMProgressLoopView.h; sourceTree = "<group>"; };
+		2321EA0C2147503F000BAE14 /* EMLogoLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMLogoLoopView.m; sourceTree = "<group>"; };
+		2321EA0D2147503F000BAE14 /* EMProgressLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMProgressLoopView.m; sourceTree = "<group>"; };
+		2321EA0E21475040000BAE14 /* EMTipsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMTipsView.m; sourceTree = "<group>"; };
+		2321EA0F21475040000BAE14 /* EMLogoLoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMLogoLoopView.h; sourceTree = "<group>"; };
+		2321EA1021475040000BAE14 /* EMTipsInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMTipsInfo.h; sourceTree = "<group>"; };
+		2321EA1121475040000BAE14 /* UIView+EMTips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EMTips.h"; sourceTree = "<group>"; };
+		2321EA1221475040000BAE14 /* EMTipsInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMTipsInfo.m; sourceTree = "<group>"; };
+		2321EA1321475040000BAE14 /* EMTips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMTips.h; sourceTree = "<group>"; };
+		2321EA1421475040000BAE14 /* EMTipsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMTipsView.h; sourceTree = "<group>"; };
+		2321EA1521475040000BAE14 /* UIView+EMTips.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EMTips.m"; sourceTree = "<group>"; };
+		2321EA1C2147506A000BAE14 /* GKImageCropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKImageCropViewController.h; sourceTree = "<group>"; };
+		2321EA1D2147506A000BAE14 /* GKImageCropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKImageCropView.h; sourceTree = "<group>"; };
+		2321EA1E2147506A000BAE14 /* GKImageCropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKImageCropViewController.m; sourceTree = "<group>"; };
+		2321EA1F2147506A000BAE14 /* FSMediaPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMediaPicker.m; sourceTree = "<group>"; };
+		2321EA202147506B000BAE14 /* GKCropBorderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKCropBorderView.h; sourceTree = "<group>"; };
+		2321EA212147506B000BAE14 /* FSMediaPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMediaPicker.h; sourceTree = "<group>"; };
+		2321EA222147506B000BAE14 /* GKCropBorderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKCropBorderView.m; sourceTree = "<group>"; };
+		2321EA232147506B000BAE14 /* GKImageCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKImageCropView.m; sourceTree = "<group>"; };
+		2321EA242147506B000BAE14 /* GKImageCropOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKImageCropOverlayView.m; sourceTree = "<group>"; };
+		2321EA252147506B000BAE14 /* GKImageCropOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKImageCropOverlayView.h; sourceTree = "<group>"; };
 		6D597A5917A0774BD88F6BC7 /* Pods-RXEMark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXEMark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RXEMark/Pods-RXEMark.debug.xcconfig"; sourceTree = "<group>"; };
 		93605CC12A5C82B67B3A44B9 /* Pods-RXEMark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXEMark.release.xcconfig"; path = "Pods/Target Support Files/Pods-RXEMark/Pods-RXEMark.release.xcconfig"; sourceTree = "<group>"; };
 		ADB484BA40FB8B3FC9C69ECE /* libPods-RXEMark.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RXEMark.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +136,7 @@
 		231BE22521463DC80070BBB3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2321EA0521474F4F000BAE14 /* EMKit */,
 				231BE26521463DF70070BBB3 /* Other */,
 				231BE22621463DC80070BBB3 /* Home */,
 				231BE22E21463DC80070BBB3 /* Bill */,
@@ -247,6 +281,51 @@
 				B2AB4D862111F6780061A8DB /* AppDelegate.m */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		2321EA0521474F4F000BAE14 /* EMKit */ = {
+			isa = PBXGroup;
+			children = (
+				2321EA0821474FE4000BAE14 /* EMImagePicker */,
+				2321EA0921474FE4000BAE14 /* EMTips */,
+			);
+			path = EMKit;
+			sourceTree = "<group>";
+		};
+		2321EA0821474FE4000BAE14 /* EMImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				2321EA212147506B000BAE14 /* FSMediaPicker.h */,
+				2321EA1F2147506A000BAE14 /* FSMediaPicker.m */,
+				2321EA202147506B000BAE14 /* GKCropBorderView.h */,
+				2321EA222147506B000BAE14 /* GKCropBorderView.m */,
+				2321EA252147506B000BAE14 /* GKImageCropOverlayView.h */,
+				2321EA242147506B000BAE14 /* GKImageCropOverlayView.m */,
+				2321EA1D2147506A000BAE14 /* GKImageCropView.h */,
+				2321EA232147506B000BAE14 /* GKImageCropView.m */,
+				2321EA1C2147506A000BAE14 /* GKImageCropViewController.h */,
+				2321EA1E2147506A000BAE14 /* GKImageCropViewController.m */,
+			);
+			path = EMImagePicker;
+			sourceTree = "<group>";
+		};
+		2321EA0921474FE4000BAE14 /* EMTips */ = {
+			isa = PBXGroup;
+			children = (
+				2321EA0F21475040000BAE14 /* EMLogoLoopView.h */,
+				2321EA0C2147503F000BAE14 /* EMLogoLoopView.m */,
+				2321EA0B2147503F000BAE14 /* EMProgressLoopView.h */,
+				2321EA0D2147503F000BAE14 /* EMProgressLoopView.m */,
+				2321EA1321475040000BAE14 /* EMTips.h */,
+				2321EA0A2147503F000BAE14 /* EMTips.m */,
+				2321EA1021475040000BAE14 /* EMTipsInfo.h */,
+				2321EA1221475040000BAE14 /* EMTipsInfo.m */,
+				2321EA1421475040000BAE14 /* EMTipsView.h */,
+				2321EA0E21475040000BAE14 /* EMTipsView.m */,
+				2321EA1121475040000BAE14 /* UIView+EMTips.h */,
+				2321EA1521475040000BAE14 /* UIView+EMTips.m */,
+			);
+			path = EMTips;
 			sourceTree = "<group>";
 		};
 		A863354988A6425C00D5C1DD /* Frameworks */ = {
@@ -415,22 +494,33 @@
 				231BE25521463DC80070BBB3 /* RXHomeVC.m in Sources */,
 				B2AB4D872111F6780061A8DB /* AppDelegate.m in Sources */,
 				231BE25821463DC90070BBB3 /* RXAlertVC.m in Sources */,
+				2321EA282147506B000BAE14 /* GKCropBorderView.m in Sources */,
+				2321EA1921475041000BAE14 /* EMTipsView.m in Sources */,
 				231BE25A21463DC90070BBB3 /* RXDiaryVC.m in Sources */,
 				231BE26121463DC90070BBB3 /* RXBaseNavVC.m in Sources */,
 				231BE25921463DC90070BBB3 /* RXBigDayVC.m in Sources */,
+				2321EA1821475041000BAE14 /* EMProgressLoopView.m in Sources */,
 				231BE25721463DC90070BBB3 /* RXBillVC.m in Sources */,
 				231BE26221463DC90070BBB3 /* RXAutoCoding.m in Sources */,
 				231BE26321463DC90070BBB3 /* RXBaseVC.m in Sources */,
 				231BE25C21463DC90070BBB3 /* RXDiaryTableViewCell.m in Sources */,
+				2321EA272147506B000BAE14 /* FSMediaPicker.m in Sources */,
+				2321EA1A21475041000BAE14 /* EMTipsInfo.m in Sources */,
+				2321EA1721475041000BAE14 /* EMLogoLoopView.m in Sources */,
 				231BE25F21463DC90070BBB3 /* RXPlaceVC.m in Sources */,
+				2321EA262147506B000BAE14 /* GKImageCropViewController.m in Sources */,
 				231BE25621463DC80070BBB3 /* RXHomeCollectionViewCell.m in Sources */,
 				231BE25B21463DC90070BBB3 /* RXDiaryInfoModel.m in Sources */,
 				231BE26421463DC90070BBB3 /* EMTheme.m in Sources */,
+				2321EA2A2147506B000BAE14 /* GKImageCropOverlayView.m in Sources */,
 				231BE25E21463DC90070BBB3 /* RXSettingVC.m in Sources */,
+				2321EA1B21475041000BAE14 /* UIView+EMTips.m in Sources */,
+				2321EA292147506B000BAE14 /* GKImageCropView.m in Sources */,
 				231BE26021463DC90070BBB3 /* RXVerticallyAlignedLabel.m in Sources */,
 				231BE25421463DC80070BBB3 /* RXSplashVC.m in Sources */,
 				231BE25D21463DC90070BBB3 /* RXDiaryNoPicTableViewCell.m in Sources */,
 				231BE26821466EBF0070BBB3 /* RXPublicDiaryVC.m in Sources */,
+				2321EA1621475040000BAE14 /* EMTips.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
