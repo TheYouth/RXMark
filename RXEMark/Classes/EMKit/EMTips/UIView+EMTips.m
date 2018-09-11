@@ -7,7 +7,7 @@
 //
 
 #import "UIView+EMTips.h"
-
+#import "EMTips.h"
 @implementation UIView (EMTips)
 
 - (void)showMaskLoadingTips:(NSString *)tips style:(EMLogoLoopViewStyle)style

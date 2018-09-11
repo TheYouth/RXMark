@@ -10,9 +10,5 @@ target 'RXEMark' do
    pod 'Masonry', '~> 1.0.1'
    pod 'MJRefresh'
    pod 'FMDB', '~>2.6.2'
-#   pod 'YYCache', '1.0.3'
-#   pod 'CZPicker'
-#   pod 'MMNumberKeyboard'
-#   pod 'PNChart'
 
 end
