@@ -11,7 +11,7 @@
 #import <MobileCoreServices/MobileCoreServices.h>
 #import <objc/runtime.h>
 #import "GKImageCropViewController.h"
-
+#import "EMTheme.h"
 #define LocalizedString(key) \
 NSLocalizedStringFromTableInBundle(key, @"FSMediaPicker", [NSBundle bundleWithPath:[[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"FSMediaPicker.bundle"]], nil)
 
@@ -197,9 +197,9 @@ NSString const * UIImagePickerControllerCircularEditedImage = @" UIImagePickerCo
     }
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-    navigationController.navigationBar.backgroundColor = [EMTheme currentTheme].navBarBGColor;
+    navigationController.navigationBar.backgroundColor = [EMTheme shareTheme].navBarBGColor;
     navigationController.navigationBar.translucent = NO;
-    EMTheme *theme = [EMTheme currentTheme];
+    EMTheme *theme = [EMTheme shareTheme];
     navigationController.navigationBar.tintColor = theme.navTintColor;
     navigationController.navigationBar.barTintColor = theme.navBarBGColor;
     navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : theme.navTintColor, NSFontAttributeName : theme.navTitleFont};

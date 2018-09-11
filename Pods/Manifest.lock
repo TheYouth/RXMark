@@ -1,20 +1,26 @@
 PODS:
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
   - Masonry (1.0.2)
   - MJRefresh (3.1.15.3)
 
 DEPENDENCIES:
+  - FMDB (~> 2.6.2)
   - Masonry (~> 1.0.1)
   - MJRefresh
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - FMDB
     - Masonry
     - MJRefresh
 
 SPEC CHECKSUMS:
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
 
-PODFILE CHECKSUM: 529eb0c90b873dbfd9769675fa512fa4f08816fa
+PODFILE CHECKSUM: 0dcb13467da794de35f1b937bd8f2f52d372b071
 
 COCOAPODS: 1.5.3
