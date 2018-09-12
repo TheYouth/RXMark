@@ -10,4 +10,12 @@
 
 @implementation RXDiaryManager
 
++ (instancetype)shareManager{
+    static RXDiaryManager *_manager = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken,^{
+        _manager = [[RXDiaryManager alloc] init];
+    });
+    return _manager;
+}
 @end

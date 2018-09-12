@@ -10,4 +10,5 @@
 
 @interface RXDiaryManager : NSObject
 
++ (instancetype)shareManager;
 @end
