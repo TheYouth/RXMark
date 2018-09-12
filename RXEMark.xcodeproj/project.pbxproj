@@ -44,6 +44,10 @@
 		2321EA4421476063000BAE14 /* RXDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2321EA4321476063000BAE14 /* RXDataBase.m */; };
 		2321EA47214796F3000BAE14 /* RXBaseDataBaseCommonProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2321EA46214796F3000BAE14 /* RXBaseDataBaseCommonProvider.m */; };
 		2321EA4B21479834000BAE14 /* RXFileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2321EA4A21479834000BAE14 /* RXFileUtil.m */; };
+		237797992148EDE5000A4879 /* RXBaseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 237797982148EDE5000A4879 /* RXBaseHandler.m */; };
+		2377979C2148F69A000A4879 /* EMQueueDef.m in Sources */ = {isa = PBXBuildFile; fileRef = 2377979A2148F699000A4879 /* EMQueueDef.m */; };
+		2377979F2148F865000A4879 /* RXDiaryHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2377979E2148F865000A4879 /* RXDiaryHandler.m */; };
+		237797A2214904F7000A4879 /* RXResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 237797A1214904F7000A4879 /* RXResult.m */; };
 		B2AB4D872111F6780061A8DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AB4D862111F6780061A8DB /* AppDelegate.m */; };
 		B2AB4D8D2111F6780061A8DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2AB4D8B2111F6780061A8DB /* Main.storyboard */; };
 		B2AB4D8F2111F67A0061A8DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2AB4D8E2111F67A0061A8DB /* Assets.xcassets */; };
@@ -125,6 +129,14 @@
 		2321EA46214796F3000BAE14 /* RXBaseDataBaseCommonProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RXBaseDataBaseCommonProvider.m; sourceTree = "<group>"; };
 		2321EA4921479834000BAE14 /* RXFileUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RXFileUtil.h; sourceTree = "<group>"; };
 		2321EA4A21479834000BAE14 /* RXFileUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RXFileUtil.m; sourceTree = "<group>"; };
+		237797972148EDE5000A4879 /* RXBaseHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RXBaseHandler.h; sourceTree = "<group>"; };
+		237797982148EDE5000A4879 /* RXBaseHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RXBaseHandler.m; sourceTree = "<group>"; };
+		2377979A2148F699000A4879 /* EMQueueDef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMQueueDef.m; sourceTree = "<group>"; };
+		2377979B2148F69A000A4879 /* EMQueueDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMQueueDef.h; sourceTree = "<group>"; };
+		2377979D2148F865000A4879 /* RXDiaryHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RXDiaryHandler.h; sourceTree = "<group>"; };
+		2377979E2148F865000A4879 /* RXDiaryHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RXDiaryHandler.m; sourceTree = "<group>"; };
+		237797A0214904F7000A4879 /* RXResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RXResult.h; sourceTree = "<group>"; };
+		237797A1214904F7000A4879 /* RXResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RXResult.m; sourceTree = "<group>"; };
 		6D597A5917A0774BD88F6BC7 /* Pods-RXEMark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXEMark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RXEMark/Pods-RXEMark.debug.xcconfig"; sourceTree = "<group>"; };
 		93605CC12A5C82B67B3A44B9 /* Pods-RXEMark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXEMark.release.xcconfig"; path = "Pods/Target Support Files/Pods-RXEMark/Pods-RXEMark.release.xcconfig"; sourceTree = "<group>"; };
 		ADB484BA40FB8B3FC9C69ECE /* libPods-RXEMark.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RXEMark.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -286,6 +298,8 @@
 		231BE24921463DC80070BBB3 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				2377979B2148F69A000A4879 /* EMQueueDef.h */,
+				2377979A2148F699000A4879 /* EMQueueDef.m */,
 				231BE24F21463DC80070BBB3 /* RXVerticallyAlignedLabel.h */,
 				231BE24A21463DC80070BBB3 /* RXVerticallyAlignedLabel.m */,
 				231BE25021463DC80070BBB3 /* RXBaseNavVC.h */,
@@ -304,6 +318,10 @@
 				2321EA46214796F3000BAE14 /* RXBaseDataBaseCommonProvider.m */,
 				2321EA4221476063000BAE14 /* RXDataBase.h */,
 				2321EA4321476063000BAE14 /* RXDataBase.m */,
+				237797972148EDE5000A4879 /* RXBaseHandler.h */,
+				237797982148EDE5000A4879 /* RXBaseHandler.m */,
+				237797A0214904F7000A4879 /* RXResult.h */,
+				237797A1214904F7000A4879 /* RXResult.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -365,6 +383,8 @@
 		2321EA2F214758E1000BAE14 /* Handler */ = {
 			isa = PBXGroup;
 			children = (
+				2377979D2148F865000A4879 /* RXDiaryHandler.h */,
+				2377979E2148F865000A4879 /* RXDiaryHandler.m */,
 			);
 			path = Handler;
 			sourceTree = "<group>";
@@ -581,10 +601,13 @@
 				231BE26321463DC90070BBB3 /* RXBaseVC.m in Sources */,
 				231BE25C21463DC90070BBB3 /* RXDiaryTableViewCell.m in Sources */,
 				2321EA272147506B000BAE14 /* FSMediaPicker.m in Sources */,
+				237797A2214904F7000A4879 /* RXResult.m in Sources */,
 				2321EA1A21475041000BAE14 /* EMTipsInfo.m in Sources */,
+				237797992148EDE5000A4879 /* RXBaseHandler.m in Sources */,
 				2321EA4B21479834000BAE14 /* RXFileUtil.m in Sources */,
 				2321EA1721475041000BAE14 /* EMLogoLoopView.m in Sources */,
 				231BE25F21463DC90070BBB3 /* RXPlaceVC.m in Sources */,
+				2377979C2148F69A000A4879 /* EMQueueDef.m in Sources */,
 				2321EA262147506B000BAE14 /* GKImageCropViewController.m in Sources */,
 				231BE25621463DC80070BBB3 /* RXHomeCollectionViewCell.m in Sources */,
 				2321EA3E21475BDA000BAE14 /* RXBaseDataProvider.m in Sources */,
@@ -594,6 +617,7 @@
 				231BE26421463DC90070BBB3 /* EMTheme.m in Sources */,
 				2321EA2A2147506B000BAE14 /* GKImageCropOverlayView.m in Sources */,
 				2321EA47214796F3000BAE14 /* RXBaseDataBaseCommonProvider.m in Sources */,
+				2377979F2148F865000A4879 /* RXDiaryHandler.m in Sources */,
 				231BE25E21463DC90070BBB3 /* RXSettingVC.m in Sources */,
 				2321EA1B21475041000BAE14 /* UIView+EMTips.m in Sources */,
 				2321EA292147506B000BAE14 /* GKImageCropView.m in Sources */,
