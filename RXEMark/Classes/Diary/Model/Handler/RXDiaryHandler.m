@@ -10,4 +10,7 @@
 
 @implementation RXDiaryHandler
 
+- (void)fetchDiaryInfoWithStartIndex:(NSInteger)index totalCount:(NSInteger)totalCount result:(RXResultBlock)resultBlock{
+    
+}
 @end
