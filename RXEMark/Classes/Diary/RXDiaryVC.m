@@ -14,6 +14,9 @@
 #import "EMTheme.h"
 #import "RXPublicDiaryVC.h"
 #import "RXBaseNavVC.h"
+#import "RXMaskView.h"
+#import "UIView+EMTips.h"
+#import "RXDiaryManager.h"
 
 static NSString *RXDiaryTableViewCellIdentif = @"RXDiaryTableViewCellIdentif";
 static NSString *RXDiaryNoPicTableViewCellIdentif = @"RXDiaryNoPicTableViewCellIdentif";
@@ -23,6 +26,7 @@ static NSString *RXDiaryNoPicTableViewCellIdentif = @"RXDiaryNoPicTableViewCellI
 @property (nonatomic, strong) NSArray          *diaryInfos;
 @property (nonatomic, strong) UIButton         *publishBtn;
 @property (nonatomic, strong) MJRefreshAutoNormalFooter  *refreshFooter;
+@property (nonatomic, strong) RXMaskView       *maskView;
 
 
 
@@ -52,7 +56,12 @@ static NSString *RXDiaryNoPicTableViewCellIdentif = @"RXDiaryNoPicTableViewCellI
     _tableView.mj_footer = self.refreshFooter;
 }
 - (void)loadData{
-    
+    [self.view showMaskLoadingTips:nil style:kLogoLoopWhite];
+    [[RXDiaryManager shareManager] fetchDiaryInfosWithStartIndex:((RXDiaryInfoModel *)self.diaryInfos.lastObject).diaryId
+                                                      totalCount:10
+                                                          result:^(RXResult *result) {
+                                                              
+                                                          }];
 }
 - (void)loadMoreData{
     
@@ -95,7 +104,7 @@ static NSString *RXDiaryNoPicTableViewCellIdentif = @"RXDiaryNoPicTableViewCellI
 #pragma mark - 🔄overwrite
 #pragma mark - ☎️notification
 - (void)refreshList:(NSNotification *)noti{
-    
+
 }
 - (void)refreshPage{
     
@@ -131,6 +140,12 @@ static NSString *RXDiaryNoPicTableViewCellIdentif = @"RXDiaryNoPicTableViewCellI
         [_publishBtn addTarget:self action:@selector(publishDiary) forControlEvents:UIControlEventTouchUpInside];
     }
     return _publishBtn;
+}
+- (RXMaskView *)maskView{
+    if (!_maskView) {
+        _maskView = [[RXMaskView alloc] init];
+    }
+    return _maskView;
 }
 - (MJRefreshAutoNormalFooter *)refreshFooter{
     if (!_refreshFooter) {
