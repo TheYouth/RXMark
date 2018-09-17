@@ -7,7 +7,13 @@
 //
 
 #import "RXDiaryManager.h"
+#import "RXDiaryHandler.h"
+@interface RXDiaryManager()
 
+@property (nonatomic, strong) RXDiaryHandler *handler;
+
+
+@end
 @implementation RXDiaryManager
 
 + (instancetype)shareManager{
@@ -18,4 +24,14 @@
     });
     return _manager;
 }
+
+- (void)fetchDiaryInfosWithStartIndex:(NSInteger)startIndex
+                           totalCount:(NSInteger)totalCount
+                               result:(RXResultBlock)resultBlock{
+    [self.handler fetchDiaryInfoWithStartIndex:startIndex
+                                    totalCount:totalCount
+                                        result:resultBlock];
+    
+}
+
 @end

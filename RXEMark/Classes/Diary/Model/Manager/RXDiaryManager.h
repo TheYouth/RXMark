@@ -7,8 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "RXResult.h"
 @interface RXDiaryManager : NSObject
 
 + (instancetype)shareManager;
+
+- (void)fetchDiaryInfosWithStartIndex:(NSInteger)startIndex
+                           totalCount:(NSInteger)totalCount result:(RXResultBlock)resultBlock;
+
 @end
