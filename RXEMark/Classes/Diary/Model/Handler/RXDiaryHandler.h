@@ -8,6 +8,7 @@
 
 #import "RXBaseHandler.h"
 #import "RXResult.h"
+#import "RXDiaryDataProvider.h"
 @interface RXDiaryHandler : RXBaseHandler
 
 - (void)fetchDiaryInfoWithStartIndex:(NSInteger)index
