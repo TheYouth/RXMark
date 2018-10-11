@@ -195,7 +195,6 @@
 				231BE22E21463DC80070BBB3 /* Bill */,
 				231BE23121463DC80070BBB3 /* Alert */,
 				231BE23421463DC80070BBB3 /* BigDay */,
-				231BE23721463DC80070BBB3 /* Lib */,
 				231BE23821463DC80070BBB3 /* Diary */,
 				231BE24321463DC80070BBB3 /* Setting */,
 				231BE24621463DC80070BBB3 /* Place */,
@@ -250,13 +249,6 @@
 				231BE23621463DC80070BBB3 /* RXBigDayVC.m */,
 			);
 			path = BigDay;
-			sourceTree = "<group>";
-		};
-		231BE23721463DC80070BBB3 /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Lib;
 			sourceTree = "<group>";
 		};
 		231BE23821463DC80070BBB3 /* Diary */ = {
@@ -808,7 +800,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8YC5F9T5P6;
 				INFOPLIST_FILE = RXEMark/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -826,7 +820,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8YC5F9T5P6;
 				INFOPLIST_FILE = RXEMark/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
