@@ -56,15 +56,38 @@ static NSString *RXDiaryNoPicTableViewCellIdentif = @"RXDiaryNoPicTableViewCellI
     _tableView.mj_footer = self.refreshFooter;
 }
 - (void)loadData{
+    __weak typeof(self)weakSelf = self;
     [self.view showMaskLoadingTips:nil style:kLogoLoopWhite];
-    [[RXDiaryManager shareManager] fetchDiaryInfosWithStartIndex:((RXDiaryInfoModel *)self.diaryInfos.lastObject).diaryId
+    [[RXDiaryManager shareManager] fetchDiaryInfosWithStartIndex:0
                                                       totalCount:10
                                                           result:^(RXResult *result) {
-                                                              
+                                                              [weakSelf.view hideManualTips];
+                                                              weakSelf.diaryInfos = result.result;
+                                                              if (weakSelf.diaryInfos.count > 0) {
+                                                                  [weakSelf.tableView reloadData];
+                                                                  [weakSelf checkHasMore:result];
+                                                              }else{
+                                                                  [weakSelf.maskView show];
+                                                              }
                                                           }];
 }
 - (void)loadMoreData{
-    
+    __weak typeof(self)weakSelf = self;
+    [[RXDiaryManager shareManager] fetchDiaryInfosWithStartIndex:((RXDiaryInfoModel *)self.diaryInfos.lastObject).diaryId
+                                                      totalCount:10 result:^(RXResult *result) {
+                                                          NSMutableArray *tempArray = [NSMutableArray arrayWithArray:weakSelf.diaryInfos];
+                                                          [tempArray addObjectsFromArray:result.result];
+                                                          weakSelf.diaryInfos = tempArray;
+                                                          [weakSelf.tableView reloadData];
+                                                          [weakSelf checkHasMore:result];
+                                                      }];
+}
+- (void)checkHasMore:(RXResult *)result{
+    if (((NSArray *)result.result).count == 0) {
+        [self.tableView.mj_footer endRefreshing];
+    }else{
+        [self.tableView.mj_footer endRefreshingWithNoMoreData];
+    }
 }
 #pragma mark - 🚪public
 #pragma mark - UITableView
@@ -104,10 +127,14 @@ static NSString *RXDiaryNoPicTableViewCellIdentif = @"RXDiaryNoPicTableViewCellI
 #pragma mark - 🔄overwrite
 #pragma mark - ☎️notification
 - (void)refreshList:(NSNotification *)noti{
-
+    NSMutableArray *tempArray = [NSMutableArray arrayWithArray:self.diaryInfos];
+    [tempArray insertObject:((RXDiaryInfoModel *)noti.object) atIndex:0];
+    self.diaryInfos = tempArray;
+    [self.tableView reloadData];
+    [self.tableView setContentOffset:CGPointMake(0, 0) animated:true];
 }
 - (void)refreshPage{
-    
+    [self.tableView reloadData];
 }
 #pragma mark - 🎬event response
 - (void)publishDiary{
