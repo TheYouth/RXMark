@@ -26,7 +26,6 @@
 		231BE26221463DC90070BBB3 /* RXAutoCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 231BE24C21463DC80070BBB3 /* RXAutoCoding.m */; };
 		231BE26321463DC90070BBB3 /* RXBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 231BE24D21463DC80070BBB3 /* RXBaseVC.m */; };
 		231BE26421463DC90070BBB3 /* EMTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 231BE24E21463DC80070BBB3 /* EMTheme.m */; };
-		231BE26821466EBF0070BBB3 /* RXPublicDiaryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 231BE26721466EBF0070BBB3 /* RXPublicDiaryVC.m */; };
 		2321EA1621475040000BAE14 /* EMTips.m in Sources */ = {isa = PBXBuildFile; fileRef = 2321EA0A2147503F000BAE14 /* EMTips.m */; };
 		2321EA1721475041000BAE14 /* EMLogoLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2321EA0C2147503F000BAE14 /* EMLogoLoopView.m */; };
 		2321EA1821475041000BAE14 /* EMProgressLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2321EA0D2147503F000BAE14 /* EMProgressLoopView.m */; };
@@ -46,6 +45,8 @@
 		2321EA47214796F3000BAE14 /* RXBaseDataBaseCommonProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2321EA46214796F3000BAE14 /* RXBaseDataBaseCommonProvider.m */; };
 		2321EA4B21479834000BAE14 /* RXFileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2321EA4A21479834000BAE14 /* RXFileUtil.m */; };
 		2325BEF2214F49DB004563D0 /* RXMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2325BEF1214F49DB004563D0 /* RXMaskView.m */; };
+		233ACC5E21703CBB00BA675B /* RXDiaryEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 233ACC5D21703CBB00BA675B /* RXDiaryEditVC.m */; };
+		233ACC6121703D6E00BA675B /* RXPublishDiaryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 233ACC6021703D6E00BA675B /* RXPublishDiaryVC.m */; };
 		237797992148EDE5000A4879 /* RXBaseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 237797982148EDE5000A4879 /* RXBaseHandler.m */; };
 		2377979C2148F69A000A4879 /* EMQueueDef.m in Sources */ = {isa = PBXBuildFile; fileRef = 2377979A2148F699000A4879 /* EMQueueDef.m */; };
 		2377979F2148F865000A4879 /* RXDiaryHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2377979E2148F865000A4879 /* RXDiaryHandler.m */; };
@@ -96,8 +97,6 @@
 		231BE25121463DC80070BBB3 /* RXAutoCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXAutoCoding.h; sourceTree = "<group>"; };
 		231BE25221463DC80070BBB3 /* RXBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXBaseVC.h; sourceTree = "<group>"; };
 		231BE25321463DC80070BBB3 /* EMTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMTheme.h; sourceTree = "<group>"; };
-		231BE26621466EBF0070BBB3 /* RXPublicDiaryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RXPublicDiaryVC.h; sourceTree = "<group>"; };
-		231BE26721466EBF0070BBB3 /* RXPublicDiaryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RXPublicDiaryVC.m; sourceTree = "<group>"; };
 		2321EA0A2147503F000BAE14 /* EMTips.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMTips.m; sourceTree = "<group>"; };
 		2321EA0B2147503F000BAE14 /* EMProgressLoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMProgressLoopView.h; sourceTree = "<group>"; };
 		2321EA0C2147503F000BAE14 /* EMLogoLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMLogoLoopView.m; sourceTree = "<group>"; };
@@ -136,6 +135,10 @@
 		2321EA4A21479834000BAE14 /* RXFileUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RXFileUtil.m; sourceTree = "<group>"; };
 		2325BEF0214F49DB004563D0 /* RXMaskView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RXMaskView.h; sourceTree = "<group>"; };
 		2325BEF1214F49DB004563D0 /* RXMaskView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RXMaskView.m; sourceTree = "<group>"; };
+		233ACC5C21703CBB00BA675B /* RXDiaryEditVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RXDiaryEditVC.h; sourceTree = "<group>"; };
+		233ACC5D21703CBB00BA675B /* RXDiaryEditVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RXDiaryEditVC.m; sourceTree = "<group>"; };
+		233ACC5F21703D6E00BA675B /* RXPublishDiaryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RXPublishDiaryVC.h; sourceTree = "<group>"; };
+		233ACC6021703D6E00BA675B /* RXPublishDiaryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RXPublishDiaryVC.m; sourceTree = "<group>"; };
 		237797972148EDE5000A4879 /* RXBaseHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RXBaseHandler.h; sourceTree = "<group>"; };
 		237797982148EDE5000A4879 /* RXBaseHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RXBaseHandler.m; sourceTree = "<group>"; };
 		2377979A2148F699000A4879 /* EMQueueDef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMQueueDef.m; sourceTree = "<group>"; };
@@ -254,8 +257,10 @@
 		231BE23821463DC80070BBB3 /* Diary */ = {
 			isa = PBXGroup;
 			children = (
-				231BE26621466EBF0070BBB3 /* RXPublicDiaryVC.h */,
-				231BE26721466EBF0070BBB3 /* RXPublicDiaryVC.m */,
+				233ACC5F21703D6E00BA675B /* RXPublishDiaryVC.h */,
+				233ACC6021703D6E00BA675B /* RXPublishDiaryVC.m */,
+				233ACC5C21703CBB00BA675B /* RXDiaryEditVC.h */,
+				233ACC5D21703CBB00BA675B /* RXDiaryEditVC.m */,
 				231BE23921463DC80070BBB3 /* RXDiaryVC.h */,
 				231BE23A21463DC80070BBB3 /* RXDiaryVC.m */,
 				231BE23B21463DC80070BBB3 /* Model */,
@@ -614,6 +619,7 @@
 				2321EA1821475041000BAE14 /* EMProgressLoopView.m in Sources */,
 				231BE25721463DC90070BBB3 /* RXBillVC.m in Sources */,
 				231BE26221463DC90070BBB3 /* RXAutoCoding.m in Sources */,
+				233ACC5E21703CBB00BA675B /* RXDiaryEditVC.m in Sources */,
 				231BE26321463DC90070BBB3 /* RXBaseVC.m in Sources */,
 				231BE25C21463DC90070BBB3 /* RXDiaryTableViewCell.m in Sources */,
 				2325BEF2214F49DB004563D0 /* RXMaskView.m in Sources */,
@@ -623,6 +629,7 @@
 				237797992148EDE5000A4879 /* RXBaseHandler.m in Sources */,
 				2321EA4B21479834000BAE14 /* RXFileUtil.m in Sources */,
 				2321EA1721475041000BAE14 /* EMLogoLoopView.m in Sources */,
+				233ACC6121703D6E00BA675B /* RXPublishDiaryVC.m in Sources */,
 				231BE25F21463DC90070BBB3 /* RXPlaceVC.m in Sources */,
 				2377979C2148F69A000A4879 /* EMQueueDef.m in Sources */,
 				2321EA262147506B000BAE14 /* GKImageCropViewController.m in Sources */,
@@ -642,7 +649,6 @@
 				231BE26021463DC90070BBB3 /* RXVerticallyAlignedLabel.m in Sources */,
 				231BE25421463DC80070BBB3 /* RXSplashVC.m in Sources */,
 				231BE25D21463DC90070BBB3 /* RXDiaryNoPicTableViewCell.m in Sources */,
-				231BE26821466EBF0070BBB3 /* RXPublicDiaryVC.m in Sources */,
 				2321EA1621475040000BAE14 /* EMTips.m in Sources */,
 				2321EA4121475F80000BAE14 /* RXBaseDataBaseProvider.m in Sources */,
 			);

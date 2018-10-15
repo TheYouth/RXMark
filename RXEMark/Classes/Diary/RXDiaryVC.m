@@ -12,11 +12,12 @@
 #import "RXDiaryInfoModel.h"
 #import "MJRefresh.h"
 #import "EMTheme.h"
-#import "RXPublicDiaryVC.h"
+#import "RXPublishDiaryVC.h"
 #import "RXBaseNavVC.h"
 #import "RXMaskView.h"
 #import "UIView+EMTips.h"
 #import "RXDiaryManager.h"
+#import "RXDiaryEditVC.h"
 
 static NSString *RXDiaryTableViewCellIdentif = @"RXDiaryTableViewCellIdentif";
 static NSString *RXDiaryNoPicTableViewCellIdentif = @"RXDiaryNoPicTableViewCellIdentif";
@@ -37,8 +38,8 @@ static NSString *RXDiaryNoPicTableViewCellIdentif = @"RXDiaryNoPicTableViewCellI
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshList:) name:nil object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshPage) name:nil object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshList:) name:DiaryPublishSuccessNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshPage) name:DiaryUpdateSuccessNotification object:nil];
     [self initUI];
     [self loadData];
 }
@@ -74,7 +75,8 @@ static NSString *RXDiaryNoPicTableViewCellIdentif = @"RXDiaryNoPicTableViewCellI
 - (void)loadMoreData{
     __weak typeof(self)weakSelf = self;
     [[RXDiaryManager shareManager] fetchDiaryInfosWithStartIndex:((RXDiaryInfoModel *)self.diaryInfos.lastObject).diaryId
-                                                      totalCount:10 result:^(RXResult *result) {
+                                                      totalCount:10
+                                                          result:^(RXResult *result) {
                                                           NSMutableArray *tempArray = [NSMutableArray arrayWithArray:weakSelf.diaryInfos];
                                                           [tempArray addObjectsFromArray:result.result];
                                                           weakSelf.diaryInfos = tempArray;
@@ -138,7 +140,7 @@ static NSString *RXDiaryNoPicTableViewCellIdentif = @"RXDiaryNoPicTableViewCellI
 }
 #pragma mark - 🎬event response
 - (void)publishDiary{
-    RXPublicDiaryVC *publicDiaryVC = [[RXPublicDiaryVC alloc] init];
+    RXPublishDiaryVC *publicDiaryVC = [[RXPublishDiaryVC alloc] init];
     RXBaseNavVC *baseNavVC = [[RXBaseNavVC alloc] initWithRootViewController:publicDiaryVC];
     [self.navigationController presentViewController:baseNavVC animated:YES completion:nil];
 }
