@@ -52,6 +52,7 @@
 		2377979F2148F865000A4879 /* RXDiaryHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2377979E2148F865000A4879 /* RXDiaryHandler.m */; };
 		237797A2214904F7000A4879 /* RXResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 237797A1214904F7000A4879 /* RXResult.m */; };
 		23992D9A214B4C0A0007A0F2 /* RXDiaryDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 23992D99214B4C0A0007A0F2 /* RXDiaryDataProvider.m */; };
+		23E1BEBF217426DF00DFA383 /* RXPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E1BEBE217426DF00DFA383 /* RXPlaceHolderTextView.m */; };
 		B2AB4D872111F6780061A8DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AB4D862111F6780061A8DB /* AppDelegate.m */; };
 		B2AB4D8D2111F6780061A8DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2AB4D8B2111F6780061A8DB /* Main.storyboard */; };
 		B2AB4D8F2111F67A0061A8DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2AB4D8E2111F67A0061A8DB /* Assets.xcassets */; };
@@ -149,6 +150,8 @@
 		237797A1214904F7000A4879 /* RXResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RXResult.m; sourceTree = "<group>"; };
 		23992D98214B4C0A0007A0F2 /* RXDiaryDataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RXDiaryDataProvider.h; sourceTree = "<group>"; };
 		23992D99214B4C0A0007A0F2 /* RXDiaryDataProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RXDiaryDataProvider.m; sourceTree = "<group>"; };
+		23E1BEBD217426DF00DFA383 /* RXPlaceHolderTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RXPlaceHolderTextView.h; sourceTree = "<group>"; };
+		23E1BEBE217426DF00DFA383 /* RXPlaceHolderTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RXPlaceHolderTextView.m; sourceTree = "<group>"; };
 		6D597A5917A0774BD88F6BC7 /* Pods-RXEMark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXEMark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RXEMark/Pods-RXEMark.debug.xcconfig"; sourceTree = "<group>"; };
 		93605CC12A5C82B67B3A44B9 /* Pods-RXEMark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXEMark.release.xcconfig"; path = "Pods/Target Support Files/Pods-RXEMark/Pods-RXEMark.release.xcconfig"; sourceTree = "<group>"; };
 		ADB484BA40FB8B3FC9C69ECE /* libPods-RXEMark.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RXEMark.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +186,8 @@
 			children = (
 				23181180214BA1EF00F84C0C /* UIImage+Extern.h */,
 				23181181214BA1EF00F84C0C /* UIImage+Extern.m */,
+				23E1BEBD217426DF00DFA383 /* RXPlaceHolderTextView.h */,
+				23E1BEBE217426DF00DFA383 /* RXPlaceHolderTextView.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -608,6 +613,7 @@
 				B2AB4D952111F67A0061A8DB /* main.m in Sources */,
 				231BE25521463DC80070BBB3 /* RXHomeVC.m in Sources */,
 				B2AB4D872111F6780061A8DB /* AppDelegate.m in Sources */,
+				23E1BEBF217426DF00DFA383 /* RXPlaceHolderTextView.m in Sources */,
 				231BE25821463DC90070BBB3 /* RXAlertVC.m in Sources */,
 				2321EA282147506B000BAE14 /* GKCropBorderView.m in Sources */,
 				2321EA1921475041000BAE14 /* EMTipsView.m in Sources */,

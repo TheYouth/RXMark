@@ -8,9 +8,11 @@
 
 #import "RXPublishDiaryVC.h"
 #import "EMTheme.h"
-@interface RXPublishDiaryVC ()
+#import "RXPlaceHolderTextView.h"
+@interface RXPublishDiaryVC ()<UITextViewDelegate>
 
 @property(nonatomic, strong)UIButton    *saveBtn;
+@property(nonatomic, strong)RXPlaceHolderTextView   *inputTextView;
 
 @end
 
@@ -48,11 +50,17 @@
     [self presentViewController:alertVC animated:YES completion:nil];
 }
 - (void)closeKeyboard{
-    
+    [self.inputTextView resignFirstResponder];
 }
 - (void)saveBtnClick:(UIButton *)sender{
     [self closeKeyboard];
     
+}
+#pragma mark - UITextViewDelegate
+- (void)textViewDidChange:(UITextView *)textView{
+    if (textView.markedTextRange == nil) {
+        
+    }
 }
 - (UIButton *)saveBtn{
     if (!_saveBtn) {
@@ -63,5 +71,15 @@
         [_saveBtn.titleLabel setFont:[UIFont systemFontOfSize:17.0]];
     }
     return _saveBtn;
+}
+- (RXPlaceHolderTextView *)inputTextView{
+    if (!_inputTextView) {
+        _inputTextView = [[RXPlaceHolderTextView alloc] initWithFrame:CGRectZero];
+        _inputTextView.backgroundColor = UIColor.whiteColor;
+        _inputTextView.placeHolder = NSLocalizedString(@"记录下此刻的心情吧...", nil);
+        _inputTextView.font = [UIFont systemFontOfSize:15.0];
+        _inputTextView.delegate = self;
+    }
+    return _inputTextView;
 }
 @end
